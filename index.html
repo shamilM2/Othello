@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Sketch</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <style>
+      canvas {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+  </head>
+
+  <body>
+    <div id="scoreboard">
+      <div><span>Human: </span><span id="human-score">2</span></div>
+      <div><span>Computer: </span><span id="computer-score">2</span></div>
+    </div>
+    <div>
+      <button id="choose-starter-btn">
+        Start new Game and Choose the stater
+      </button>
+    </div>
+    <canvas id="board"></canvas>
+    <div id="game-over-msg"></div>
+    <script src="sketch.js"></script>
+  </body>
+</html>
